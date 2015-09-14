@@ -1,6 +1,6 @@
 <?php Themewrangler::setup_page();get_header(); ?>
 
-<div id="page" class="section">
+<div id="page" class="section bg-color--gray">
    
    <header>
       <div class="fs-row">
