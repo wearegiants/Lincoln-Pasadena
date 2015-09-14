@@ -30,15 +30,14 @@
 
 <header id="header">
   <div class="fs-row">
-    <menu id="header-main" class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
+    <menu id="header-main" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 text-center">
       <a href="/" id="header--logo" class="btn btn-logo btn-nav btn-first"><?php bloginfo('name' );?></a>
     </menu>
     <menu id="header-mobile" class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
       <a href="/" class="btn btn-logo btn-nav btn-first">Menu</a>
     </menu>
-    <menu id="header-navigation" class="fs-cell fs-lg-8 fs-md-4 fs-sm-hide">
+    <menu id="header-navigation" class="fs-cell fs-lg-12 fs-md-6 fs-sm-hide text-center">
       <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
-      <?php include locate_template('parts/store/shopify--bag.php') ?>
     </menu>
   </div>
 </header>

@@ -49,13 +49,23 @@
 
 @spaced:      25px;
 
-.bg {
-  &.green {
-    background: @green;
+.bg-color {
+
+  &--gray, &--grey {
+    background-color: @bgGray;
   }
-  &.lightgray {
-    background: @bgGray;
+
+  &--black {
+    background-color: @black;
+    color: @white;
+    a {
+      color: @white75;
+      &:hover {
+        color: @white;
+      }
+    }
   }
+
 }
 
 // Mixins
