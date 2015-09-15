@@ -289,6 +289,13 @@ form input[type=submit]-nav:last-child,
 form input[type=search]-nav:last-child {
   padding-right: 0;
 }
+form input[type=submit]-icon:before,
+form input[type=search]-icon:before {
+  position: relative;
+  top: .1em;
+  font-size: 16px;
+  font-size: 1rem;
+}
 form input[type=submit].btn-lg,
 form input[type=search].btn-lg {
   font-size: 20px;
@@ -424,6 +431,12 @@ form input[type=search].btn-success.btn-default {
 .btn-nav:last-child {
   padding-right: 0;
 }
+.btn-icon:before {
+  position: relative;
+  top: .1em;
+  font-size: 16px;
+  font-size: 1rem;
+}
 .btn.btn-lg {
   font-size: 20px;
   font-size: 1.25rem;
@@ -500,7 +513,7 @@ form input[type=search].btn-success.btn-default {
   width: 100%;
 }
 .section {
-  padding: 75px 0;
+  padding: 50px 0;
 }
 .section--notop {
   padding-top: 0;

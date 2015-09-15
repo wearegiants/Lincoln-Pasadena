@@ -36,10 +36,11 @@
         <img src="/assets/img/lincolnlogo.svg" alt="<?php bloginfo('name' );?>" class="img-responsive">
       </a>
     </menu>
-    <menu id="header-mobile" class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
+    <menu id="header-mobile" class="fs-cell fs-lg-hide fs-md-hide fs-sm-hide text-right">
       <a href="/" class="btn btn-logo btn-nav btn-first">Menu</a>
     </menu>
-    <menu id="header-navigation" class="fs-cell fs-lg-12 fs-md-6 fs-sm-hide text-center">
+    <menu id="header-navigation" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 text-center">
+      <?php if(!is_front_page()): ?><a href="/" class="btn btn-nav btn-icon ss-glyphish-outlined ss-home"></a><?php endif; ?>
       <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
     </menu>
   </div>
