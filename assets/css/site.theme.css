@@ -12,6 +12,17 @@
 .bg-color--black a:hover {
   color: #ffffff;
 }
+.bg-color--black .divider {
+  background: rgba(255, 255, 255, 0.25);
+}
+.bg-color--black h1,
+.bg-color--black h2,
+.bg-color--black h3,
+.bg-color--black h4,
+.bg-color--black h5,
+.bg-color--black h6 {
+  color: #ffffff;
+}
 .left {
   float: left;
   margin-right: 20px;
@@ -487,6 +498,23 @@ form input[type=search].btn-success.btn-default {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+.section {
+  padding: 75px 0;
+}
+.section--notop {
+  padding-top: 0;
+}
+.section--nobottom {
+  padding-bottom: 0;
+}
+.section--small {
+  padding: 25px 0;
+}
+.section header h4 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 #header--logo {
   margin: 0;

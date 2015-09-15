@@ -13,7 +13,7 @@
    <div id="page--content" class="content">
       <div class="fs-row">
 
-         <div class="fs-cell fs-lg-half fs-md-4 fs-sm-3 fs-centered">
+         <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-centered">
             <div id="page--intro" class="text-center">
                <?php the_post(); the_content(); ?>
             </div>
@@ -24,14 +24,14 @@
          <?php if(get_field('gallery')): ?>
          <div class="fs-cell fs-all-full">
             <div id="page--gallery" class="gallery text-center">
-               Gallery!
+               <?php include locate_template('parts/gallery-list.php' ); ?>
             </div>
          </div>
          <hr class="invisible">
          <?php endif; ?>
 
          <?php if(get_field('page_outro')): ?>
-         <div class="fs-cell fs-lg-half fs-md-4 fs-sm-3 fs-centered">
+         <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-centered">
             <div id="page--outro" class="text-center">
                 <?php the_field('page_outro');?>
             </div>

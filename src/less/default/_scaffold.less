@@ -1,7 +1,27 @@
-#header {
+.section {
 
-  .btn {
-    margin-bottom: 0;
-  }
+   padding: @spaced*3 0;
+
+   &--notop {
+      padding-top: 0;
+   }
+
+   &--nobottom {
+      padding-bottom: 0;
+   }
+
+   &--small {
+      padding: @spaced 0;
+   }
+
+   header {
+
+      h4 {
+         margin-bottom: @spaced;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+   }
 
 }
