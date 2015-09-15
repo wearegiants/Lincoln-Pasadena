@@ -3,5 +3,8 @@
 $(document).ready(function(){
 
    $(".gallery--zoom").lightbox();
+   $(".notification").on('click', function(){
+      $(this).fadeOut();
+   });
 
 });

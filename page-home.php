@@ -1,5 +1,17 @@
 <?php Themewrangler::setup_page();get_header(/***Template Name: Homepage */); ?>
 
+<div id="home--notification" class="notification">
+   <div class="fs-row">
+      <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
+         <div id="home--notification_content" class="notification--content">
+            <div class="wrapper">
+               Hey Girl
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
 <div id="home">
    <div id="home--intro" class="section section--notop">
       <div class="fs-row">
