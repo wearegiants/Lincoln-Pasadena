@@ -21,6 +21,11 @@
 
          <hr class="invisible">
 
+         <?php if(is_page('menu')): ?>
+         <?php include locate_template('parts/menu.php' );?>
+         <hr class="invisible">
+         <?php endif; ?>
+
          <?php if(get_field('gallery')): ?>
          <div class="fs-cell fs-all-full">
             <div id="page--gallery" class="gallery text-center">
