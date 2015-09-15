@@ -30,8 +30,11 @@
 
 <header id="header">
   <div class="fs-row">
-    <menu id="header-main" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 text-center">
-      <a href="/" id="header--logo" class="btn btn-logo btn-nav btn-first"><?php bloginfo('name' );?></a>
+    <menu id="header-main" class="fs-cell fs-lg-5 fs-md-4 fs-sm-3 fs-centered">
+      <hr class="invisible">
+      <a href="/" id="header--logo">
+        <img src="/assets/img/lincolnlogo.svg" alt="<?php bloginfo('name' );?>" class="img-responsive">
+      </a>
     </menu>
     <menu id="header-mobile" class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
       <a href="/" class="btn btn-logo btn-nav btn-first">Menu</a>
