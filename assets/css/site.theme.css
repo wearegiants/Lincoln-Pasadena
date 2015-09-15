@@ -512,8 +512,15 @@ form input[type=search].btn-success.btn-default {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.section {
-  padding: 50px 0;
+@media screen and (min-width: 300px) {
+  .section {
+    padding: 25px 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  .section {
+    padding: 50px 0;
+  }
 }
 .section--notop {
   padding-top: 0;

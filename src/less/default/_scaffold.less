@@ -1,6 +1,12 @@
 .section {
 
-   padding: @spaced*2 0;
+   @media @min {
+      padding: @spaced 0;
+   }
+
+   @media @tablet {
+      padding: @spaced*2 0;
+   }
 
    &--notop {
       padding-top: 0;
