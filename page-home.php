@@ -1,5 +1,6 @@
 <?php Themewrangler::setup_page();get_header(/***Template Name: Homepage */); ?>
 
+<?php if(get_field('enable_notification')): ?>
 <div id="home--notification" class="notification">
    <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
@@ -11,6 +12,7 @@
       </div>
    </div>
 </div>
+<?php endif; ?>
 
 <div id="home">
    <div id="home--intro" class="section section--notop">

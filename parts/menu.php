@@ -3,49 +3,73 @@
    <div class="fs-cell fs-lg-half fs-md-half fs-sm-full">
 
       <div id="menu--regular" class="menu text-center">
+         <div class="accordion">
+         <ul class="accordion-wrapper">
 
-         <h4>Breakfast</h4>
+         <li class="accordion-item">
+         <a href="#" class="accordion-item__question">Breakfast</a>
 
          <?php if( have_rows('breakfast', 6) ): ?>
+         <div class="accordion-item__answer">
          <?php while ( have_rows('breakfast', 6) ) : the_row(); ?>
          <?php include locate_template('parts/menu-item.php');?>
          <?php endwhile; ?>
+         </div>
          <?php endif; ?>
 
          <hr class="divider">
-         <h4>Sandwiches</h4>
+         </li>
+
+         <li class="accordion-item">
+         <a href="#" class="accordion-item__question">Sandwiches</a>
 
          <?php if( have_rows('sandwiches', 6) ): ?>
+         <div class="accordion-item__answer">
          <?php while ( have_rows('sandwiches', 6) ) : the_row(); ?>
          <?php include locate_template('parts/menu-item.php');?>
          <?php endwhile; ?>
+         </div>
          <?php endif; ?>
 
          <hr class="divider">
-         <h4>Bowls & Salads</h4>
+         </li>
+
+         <li class="accordion-item">
+         <a href="#" class="accordion-item__question">Bowls & Salads</a>
 
          <?php if( have_rows('bowls_salads', 6) ): ?>
+         <div class="accordion-item__answer">
          <?php while ( have_rows('bowls_salads', 6) ) : the_row(); ?>
          <?php include locate_template('parts/menu-item.php');?>
          <?php endwhile; ?>
+         </div>
          <?php endif; ?>
 
          <hr class="divider">
-         <h4>Sides</h4>
+         </li>
+
+         <li class="accordion-item">
+         <a href="#" class="accordion-item__question">Sides</a>
 
          <?php if( have_rows('sides', 6) ): ?>
+         <div class="accordion-item__answer">
          <?php while ( have_rows('sides', 6) ) : the_row(); ?>
          <?php include locate_template('parts/menu-item.php');?>
          <?php endwhile; ?>
+         </div>
          <?php endif; ?>
 
+         </li>
+
+         </ul>
+         </div>
       </div>
    </div>
 
    <div class="fs-cell fs-lg-half fs-md-half fs-sm-full">
       <div id="menu--specials" class="menu text-center bg-color--black  section--small">
 
-         <h4>Specials</h4>
+         <a href="#" class="accordion-item__question">Specials</a>
          <?php if( have_rows('specials', 6) ): ?>
          <?php while ( have_rows('specials', 6) ) : the_row(); ?>
          <?php include locate_template('parts/menu-item.php');?>

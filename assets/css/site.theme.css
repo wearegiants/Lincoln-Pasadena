@@ -82,8 +82,9 @@ img.rounded {
   outline: none;
 }
 body {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'adobe-caslon-pro', 'georgia', serif;
+  font-size: 22px;
+  font-size: 1.375rem;
   -webkit-font-smoothing: antialiased;
   color: #666666;
   line-height: 1.5;
@@ -107,8 +108,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'proxima-nova', sans-serif;
   color: #404040;
   line-height: inherit;
   margin: 15px 0;
@@ -268,7 +268,6 @@ form input[type=search] {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-weight: 600;
   border-radius: 3px;
   height: 34px;
   padding: 0 10px;
@@ -294,17 +293,55 @@ form input[type=search].btn-first {
 form input[type=submit]-nav,
 form input[type=search]-nav {
   margin-bottom: 0;
-  font-weight: 400;
   height: 80px;
   line-height: 80px;
+  font-family: 'proxima-nova', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  font-size: 0.875rem;
+  position: relative;
+}
+form input[type=submit]-nav:before,
+form input[type=search]-nav:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 8px;
+  background: #cbcbd2;
+  margin-top: -1px;
+  left: -4px;
+}
+form input[type=submit]-nav:after,
+form input[type=search]-nav:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 1px;
+  width: 8px;
+  background: #cbcbd2;
+  right: -4px;
 }
 form input[type=submit]-nav:first-child,
 form input[type=search]-nav:first-child {
   padding-left: 0;
 }
+form input[type=submit]-nav:first-child:before,
+form input[type=search]-nav:first-child:before {
+  display: none;
+}
 form input[type=submit]-nav:last-child,
 form input[type=search]-nav:last-child {
   padding-right: 0;
+}
+form input[type=submit]-nav:last-child:after,
+form input[type=search]-nav:last-child:after {
+  display: none;
 }
 form input[type=submit]-icon:before,
 form input[type=search]-icon:before {
@@ -421,7 +458,6 @@ form input[type=search].btn-success.btn-default {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-weight: 600;
   border-radius: 3px;
   height: 34px;
   padding: 0 10px;
@@ -441,15 +477,49 @@ form input[type=search].btn-success.btn-default {
 }
 .btn-nav {
   margin-bottom: 0;
-  font-weight: 400;
   height: 80px;
   line-height: 80px;
+  font-family: 'proxima-nova', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  font-size: 0.875rem;
+  position: relative;
+}
+.btn-nav:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 8px;
+  background: #cbcbd2;
+  margin-top: -1px;
+  left: -4px;
+}
+.btn-nav:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 1px;
+  width: 8px;
+  background: #cbcbd2;
+  right: -4px;
 }
 .btn-nav:first-child {
   padding-left: 0;
 }
+.btn-nav:first-child:before {
+  display: none;
+}
 .btn-nav:last-child {
   padding-right: 0;
+}
+.btn-nav:last-child:after {
+  display: none;
 }
 .btn-icon:before {
   position: relative;
@@ -535,6 +605,16 @@ form input[type=search].btn-success.btn-default {
   width: 100%;
 }
 @media screen and (min-width: 300px) {
+  #wrapper {
+    padding: 0 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #wrapper {
+    padding: 0 15px 15px;
+  }
+}
+@media screen and (min-width: 300px) {
   .section {
     padding: 25px 0;
   }
@@ -554,9 +634,12 @@ form input[type=search].btn-success.btn-default {
   padding: 25px 0;
 }
 .section header h4 {
-  margin-bottom: 25px;
+  margin-bottom: 43.75px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 1rem;
 }
 .notification {
   height: 100%;
@@ -648,6 +731,38 @@ form input[type=search].btn-success.btn-default {
 }
 .gallery--list_item.description img {
   visibility: hidden;
+}
+.accordion {
+  padding: 0;
+}
+.accordion-wrapper {
+  padding: 0;
+}
+.accordion-header__title {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.accordion-item {
+  margin: 0;
+  display: block;
+}
+.accordion-item__question {
+  font-family: 'proxima-nova', sans-serif;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+.accordion-item__answer {
+  padding-top: 15px;
+}
+.accordion-item:before {
+  display: none;
 }
 #bag {
   position: relative;
