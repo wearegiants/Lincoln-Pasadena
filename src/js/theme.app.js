@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 
+   $(".background").background();
    $(".gallery--zoom").lightbox();
    $(".notification").on('click', function(){
       $(this).fadeOut();

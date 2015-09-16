@@ -626,6 +626,13 @@ form input[type=search].btn-success.btn-default {
           transform: translate(-50%, -50%);
   width: 100%;
 }
+.gallery--list_item_bg {
+  height: 325px;
+  display: block;
+}
+.gallery--list_item_bg.tall {
+  height: 650px;
+}
 .gallery--list_item.description {
   background: pink;
   position: relative;

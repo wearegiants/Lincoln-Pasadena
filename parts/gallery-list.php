@@ -8,6 +8,15 @@
    $thumb = $image['sizes'][ $size ];
    $width = $image['sizes'][ $size . '-width' ];
    $height = $image['sizes'][ $size . '-height' ];
+   if ( $height > $width) {
+
+   $orient = 'tall';
+
+   } else {
+
+   $orient = 'medium';
+
+   }
 ?>
 
 
@@ -15,11 +24,7 @@
 
 <div class="gallery--list_item fs-cell fs-all-half fs-contained">
    <a href="<?php echo $image['sizes']['large']; ?>" class="lightbox lightbox_image gallery--zoom" data-lightbox-gallery="gallery">
-      <?php if ( wp_is_mobile() ): ?>
-      <img class="img-responsive" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-      <?php else: ?>
-      <img class="img-responsive" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-      <?php endif; ?>
+      <span class="gallery--list_item_bg background <?php echo $orient; ?>" data-background-options='{"source":{"0px":"<?php echo $image['sizes']['medium']; ?>","980px":"<?php echo $image['sizes']['large']; ?>"}}'></span>
    </a>
 </div>
 
@@ -29,11 +34,7 @@
 
 <div class="gallery--list_item fs-cell fs-all-half fs-contained">
    <a href="<?php echo $image['sizes']['large']; ?>" class="lightbox lightbox_image gallery--zoom" data-lightbox-gallery="gallery">
-      <?php if ( wp_is_mobile() ): ?>
-      <img class="img-responsive" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-      <?php else: ?>
-      <img class="img-responsive" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-      <?php endif; ?>
+      <span class="gallery--list_item_bg background <?php echo $orient; ?>" data-background-options='{"source":{"0px":"<?php echo $image['sizes']['medium']; ?>","980px":"<?php echo $image['sizes']['large']; ?>"}}'></span>
    </a>
 </div>
 
@@ -42,7 +43,7 @@
       <?php echo $image['title']; ?>
       <?php echo $image['caption']; ?>
    </div>
-   <img src="http://placehold.it/<?php echo $width; ?>x<?php echo $height; ?>/fff/fff" height="<?php echo $height; ?>" width="<?php echo $width; ?>" alt='pixel' class="img-responsive" />
+   <span class="gallery--list_item_bg <?php echo $orient; ?>"></span>
 </div>
 
 </div>
