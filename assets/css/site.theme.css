@@ -47,12 +47,20 @@ img.rounded {
   border-radius: 50%;
 }
 .rotate-45 {
-  transform: rotate(45deg);
-  transform-origin: center center;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
 }
 .rotate-90 {
-  transform: rotate(90deg);
-  transform-origin: center center;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
 }
 .centered {
   float: none!important;
@@ -65,7 +73,8 @@ img.rounded {
 *:visited,
 *:active,
 *:focus {
-  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+  -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+          transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
 }
 *:focus,
 *:hover,
@@ -81,6 +90,11 @@ body {
 }
 body * {
   word-wrap: break-word;
+}
+::-moz-selection,
+::-moz-selection {
+  background: #eee;
+  text-shadow: none;
 }
 ::selection,
 ::-moz-selection {
@@ -250,7 +264,10 @@ form input[type=search] {
   display: inline-block;
   margin: 0 0 10px 0;
   text-align: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-weight: 600;
   border-radius: 3px;
   height: 34px;
@@ -400,7 +417,10 @@ form input[type=search].btn-success.btn-default {
   display: inline-block;
   margin: 0 0 10px 0;
   text-align: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-weight: 600;
   border-radius: 3px;
   height: 34px;
@@ -509,7 +529,9 @@ form input[type=search].btn-success.btn-default {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
 }
 @media screen and (min-width: 300px) {
@@ -599,8 +621,26 @@ form input[type=search].btn-success.btn-default {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
+}
+.gallery--list_item.description {
+  background: pink;
+  position: relative;
+}
+.gallery--list_item.description .wrapper {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+.gallery--list_item.description img {
+  visibility: hidden;
 }
 #bag {
   position: relative;

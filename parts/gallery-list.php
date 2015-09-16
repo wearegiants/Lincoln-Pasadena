@@ -3,7 +3,14 @@
 <?php  $images = get_field('gallery'); if( $images ): ?>
 <?php foreach( $images as $image ): ?>
 
-<div class="gallery--listitem fs-cell fs-all-half fs-contained">
+<?php 
+   $size = 'large';
+   $thumb = $image['sizes'][ $size ];
+   $width = $image['sizes'][ $size . '-width' ];
+   $height = $image['sizes'][ $size . '-height' ];
+?>
+
+<div class="gallery--list_item fs-cell fs-all-half fs-contained">
    <a href="<?php echo $image['sizes']['large']; ?>" class="lightbox lightbox_image gallery--zoom" data-lightbox-gallery="gallery">
       <?php if ( wp_is_mobile() ): ?>
       <img class="img-responsive" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -12,6 +19,16 @@
       <?php endif; ?>
    </a>
 </div>
+
+<?php if($image['caption']): ?>
+<div class="gallery--list_item description fs-cell fs-all-half fs-contained">
+   <div class="wrapper text-center">
+      <?php echo $image['title']; ?>
+      <?php echo $image['caption']; ?>
+   </div>
+   <img src="http://placehold.it/<?php echo $width; ?>x<?php echo $height; ?>/fff/fff" height="<?php echo $height; ?>" width="<?php echo $width; ?>" alt='pixel' class="img-responsive" />
+</div>
+<?php endif; ?>
 
 <?php endforeach; ?>
 <?php endif; ?>
