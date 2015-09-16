@@ -10,6 +10,9 @@
    $height = $image['sizes'][ $size . '-height' ];
 ?>
 
+
+<?php if(!$image['caption']): ?>
+
 <div class="gallery--list_item fs-cell fs-all-half fs-contained">
    <a href="<?php echo $image['sizes']['large']; ?>" class="lightbox lightbox_image gallery--zoom" data-lightbox-gallery="gallery">
       <?php if ( wp_is_mobile() ): ?>
@@ -20,7 +23,20 @@
    </a>
 </div>
 
-<?php if($image['caption']): ?>
+<?php else: ?>
+
+<div class="gallery--list_item-wrapper fs-cell fs-all-full fs-contained">
+
+<div class="gallery--list_item fs-cell fs-all-half fs-contained">
+   <a href="<?php echo $image['sizes']['large']; ?>" class="lightbox lightbox_image gallery--zoom" data-lightbox-gallery="gallery">
+      <?php if ( wp_is_mobile() ): ?>
+      <img class="img-responsive" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php else: ?>
+      <img class="img-responsive" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endif; ?>
+   </a>
+</div>
+
 <div class="gallery--list_item description fs-cell fs-all-half fs-contained">
    <div class="wrapper text-center">
       <?php echo $image['title']; ?>
@@ -28,6 +44,9 @@
    </div>
    <img src="http://placehold.it/<?php echo $width; ?>x<?php echo $height; ?>/fff/fff" height="<?php echo $height; ?>" width="<?php echo $width; ?>" alt='pixel' class="img-responsive" />
 </div>
+
+</div>
+
 <?php endif; ?>
 
 <?php endforeach; ?>
