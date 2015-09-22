@@ -28,7 +28,7 @@
          </div>
       </div>
    </div>
-   <div id="home--menu" class="section bg-color--grey">
+   <div id="home--menu" class="section bg-color--beige">
       <div class="fs-row">
          <div class="fs-cell fs-all-full">
             <header><h4 class="title text-center">Menu</h4></header>
@@ -42,13 +42,27 @@
       <div class="fs-row">
          <div class="fs-cell fs-all-full">
             <header><h4 class="title text-center">Store</h4></header>
+            <div class="fs-cell fs-lg-8 fs-lg-push-2 fs-md-4 fs-md-push-1 fs-sm-3 fs-contained">
+               <div id="home--copy" class="text-center">
+                  <?php the_field('store_teaser'); ?>
+                  <hr class="invisible">
+               </div>
+            </div>
+            <?php $gallery = get_field('store_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
          </div>
       </div>
    </div>
-   <div id="home--events" class="section">
+   <div id="home--events" class="section  bg-color--beige">
       <div class="fs-row">
          <div class="fs-cell fs-all-full">
             <header><h4 class="title text-center">Events</h4></header>
+            <div class="fs-cell fs-lg-8 fs-lg-push-2 fs-md-4 fs-md-push-1 fs-sm-3 fs-contained">
+               <div id="home--copy" class="text-center">
+                  <?php the_field('events_teaser'); ?>
+                  <hr class="invisible">
+               </div>
+            </div>
+            <?php $gallery = get_field('events_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
          </div>
       </div>
    </div>

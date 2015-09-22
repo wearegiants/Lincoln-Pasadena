@@ -1,0 +1,44 @@
+#footer {
+
+	.font_size(19);
+	line-height: 1.8;
+
+	a {
+		text-decoration: none;
+		border: 0;
+	}
+
+	p {
+		line-height: inherit;
+		strong,b {
+			.headerFont();
+			.font_size(14);
+			letter-spacing: 2px;
+			color: @white50;
+		}
+	}
+
+	&--copyright {
+		.font_size(15);
+		p {
+			font-size: inherit;
+		}
+		.wag {
+			.headerFont();
+			.font_size(11);
+			letter-spacing: 1px;
+			color: @white;
+			font-weight: 700;
+			text-transform: uppercase;
+			opacity: .25;
+			.transition();
+			a {
+				color: inherit;
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+}
