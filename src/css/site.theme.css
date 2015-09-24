@@ -1,12 +1,17 @@
 .bg-color--gray,
 .bg-color--grey {
-  background-color: #f2f2f2;
-}
-.bg-color--beige {
-  background: #F3EEE4;
+  background-color: #FCF6E8;
+  background-image: url('/assets/img/bg_beige.jpg');
+  background-size: 50% auto;
+  background-position: center center;
+  background-repeat: repeat;
 }
 .bg-color--black {
-  background-color: #333333;
+  background-color: #231f20;
+  background-image: url('/assets/img/bg_dark.jpg');
+  background-size: 50% auto;
+  background-position: center center;
+  background-repeat: repeat;
   color: #ffffff;
 }
 .bg-color--black a {
@@ -25,14 +30,6 @@
 .bg-color--black h5,
 .bg-color--black h6 {
   color: #ffffff;
-}
-.left {
-  float: left;
-  margin-right: 20px;
-}
-.right {
-  float: right;
-  margin-left: 20px;
 }
 .img-responsive {
   display: block;
@@ -674,7 +671,7 @@ form input[type=search].btn-success.btn-default {
 }
 #splash {
   color: rgba(255, 255, 255, 0.5);
-  background: #333333;
+  background: #231f20;
   height: 100%;
   left: 0;
   position: absolute;
@@ -687,6 +684,50 @@ form input[type=search].btn-success.btn-default {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+#footer {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.8;
+}
+#footer a {
+  text-decoration: none;
+  border: 0;
+}
+#footer p {
+  line-height: inherit;
+}
+#footer p strong,
+#footer p b {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer--copyright {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+#footer--copyright p {
+  font-size: inherit;
+}
+#footer--copyright .wag {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .25;
+  transition: 300ms ease;
+}
+#footer--copyright .wag a {
+  color: inherit;
+}
+#footer--copyright .wag:hover {
+  opacity: 1;
 }
 .gallery--list_item_bg {
   height: 325px;

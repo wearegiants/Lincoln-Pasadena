@@ -1,12 +1,17 @@
 .bg-color--gray,
 .bg-color--grey {
-  background-color: #f2f2f2;
-}
-.bg-color--beige {
-  background: #F3EEE4;
+  background-color: #FCF6E8;
+  background-image: url('/assets/img/bg_beige.jpg');
+  background-size: 50% auto;
+  background-position: center center;
+  background-repeat: repeat;
 }
 .bg-color--black {
-  background-color: #333333;
+  background-color: #231f20;
+  background-image: url('/assets/img/bg_dark.jpg');
+  background-size: 50% auto;
+  background-position: center center;
+  background-repeat: repeat;
   color: #ffffff;
 }
 .bg-color--black a {
@@ -26,14 +31,6 @@
 .bg-color--black h6 {
   color: #ffffff;
 }
-.left {
-  float: left;
-  margin-right: 20px;
-}
-.right {
-  float: right;
-  margin-left: 20px;
-}
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -50,20 +47,12 @@ img.rounded {
   border-radius: 50%;
 }
 .rotate-45 {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: center center;
-      -ms-transform-origin: center center;
-          transform-origin: center center;
+  transform: rotate(45deg);
+  transform-origin: center center;
 }
 .rotate-90 {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: center center;
-      -ms-transform-origin: center center;
-          transform-origin: center center;
+  transform: rotate(90deg);
+  transform-origin: center center;
 }
 .centered {
   float: none!important;
@@ -76,8 +65,7 @@ img.rounded {
 *:visited,
 *:active,
 *:focus {
-  -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
-          transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
 }
 *:focus,
 *:hover,
@@ -94,11 +82,6 @@ body {
 }
 body * {
   word-wrap: break-word;
-}
-::-moz-selection,
-::-moz-selection {
-  background: #eee;
-  text-shadow: none;
 }
 ::selection,
 ::-moz-selection {
@@ -267,10 +250,7 @@ form input[type=search] {
   display: inline-block;
   margin: 0 0 10px 0;
   text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   border-radius: 3px;
   height: 34px;
   padding: 0 10px;
@@ -457,10 +437,7 @@ form input[type=search].btn-success.btn-default {
   display: inline-block;
   margin: 0 0 10px 0;
   text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   border-radius: 3px;
   height: 34px;
   padding: 0 10px;
@@ -602,9 +579,7 @@ form input[type=search].btn-success.btn-default {
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 @media screen and (min-width: 300px) {
@@ -696,7 +671,7 @@ form input[type=search].btn-success.btn-default {
 }
 #splash {
   color: rgba(255, 255, 255, 0.5);
-  background: #333333;
+  background: #231f20;
   height: 100%;
   left: 0;
   position: absolute;
@@ -707,9 +682,7 @@ form input[type=search].btn-success.btn-default {
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 #footer {
@@ -748,8 +721,7 @@ form input[type=search].btn-success.btn-default {
   font-weight: 700;
   text-transform: uppercase;
   opacity: .25;
-  -webkit-transition: 300ms ease;
-          transition: 300ms ease;
+  transition: 300ms ease;
 }
 #footer--copyright .wag a {
   color: inherit;
@@ -772,9 +744,7 @@ form input[type=search].btn-success.btn-default {
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 .gallery--list_item.description img {

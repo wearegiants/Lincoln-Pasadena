@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="soil">Soil</h1>
+
+<p><a href="https://travis-ci.org/roots/soil"><img src="https://travis-ci.org/roots/soil.svg" alt="Build Status" /></a></p>
+
+<p>A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prerequisite</th>
+      <th>How to check</th>
+      <th>How to install</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PHP &gt;= 5.4.x</td>
+      <td><code>php -v</code></td>
+      <td>
+        <a href="http://php.net/manual/en/install.php">php.net</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="installation">Installation</h2>
+
+<p>You can install this plugin via the command-line or the WordPress admin panel.</p>
+
+<h3 id="viacommand-line">via Command-line</h3>
+
+<p>If you&#8217;re <a href="https://roots.io/using-composer-with-wordpress/">using Composer to manage WordPress</a>, add Soil to your project&#8217;s dependencies.</p>
+
+<pre><code class="sh">composer require roots/soil 3.5.0
+</code></pre>
+
+<p>Then activate the plugin via <a href="http://wp-cli.org/commands/plugin/activate/">wp-cli</a>.</p>
+
+<pre><code class="sh">wp plugin activate soil
+</code></pre>
+
+<h3 id="viawordpressadminpanel">via WordPress Admin Panel</h3>
+
+<ol>
+<li>Download the <a href="https://github.com/roots/soil/archive/master.zip">latest zip</a> of this repo.</li>
+<li>In your WordPress admin panel, navigate to Plugins-&gt;Add New</li>
+<li>Click Upload Plugin</li>
+<li>Upload the zip file that you downloaded.</li>
+</ol>
+
+<h2 id="modules">Modules</h2>
+
+<ul>
+<li><p><strong>Load jQuery from the Google CDN</strong><br>
+ <code>add_theme_support('soil-jquery-cdn');</code></p></li>
+<li><p><strong>Cleaner WordPress markup</strong><br>
+ <code>add_theme_support('soil-clean-up');</code></p></li>
+<li><p><strong>Cleaner walker for navigation menus</strong><br>
+ <code>add_theme_support('soil-nav-walker');</code></p></li>
+<li><p><strong>Root relative URLs</strong><br>
+ <code>add_theme_support('soil-relative-urls');</code></p></li>
+<li><p><strong>Google Analytics</strong> (<a href="https://github.com/roots/soil/wiki/Google-Analytics">more info</a>)<br>
+ <code>add_theme_support('soil-google-analytics', 'UA-XXXXX-Y');</code></p></li>
+<li><p><strong>Move all JS to the footer</strong><br>
+ <code>add_theme_support('soil-js-to-footer');</code></p></li>
+<li><p><strong>Disable trackbacks</strong><br>
+ <code>add_theme_support('soil-disable-trackbacks');</code></p></li>
+<li><p><strong>Disable asset versioning</strong><br>
+ <code>add_theme_support('soil-disable-asset-versioning');</code></p></li>
+</ul>
+
+<h2 id="support">Support</h2>
+
+<p>Use the <a href="https://discourse.roots.io/">Roots Discourse</a> to ask questions and get support.</p>
+
+</body>
+</html>

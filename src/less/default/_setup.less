@@ -44,7 +44,7 @@
 @white50:     rgba(255, 255, 255, 0.5);
 @white75:     rgba(255, 255, 255, 0.75);
 
-@black:       #333;
+@black:       #231F20;
 @white:       #fff;
 
 @spaced:      25px;
@@ -52,15 +52,19 @@
 .bg-color {
 
   &--gray, &--grey {
-    background-color: @bgGray;
-  }
-
-  &--beige {
-    background: #F3EEE4;
+    background-color: #FCF6E8;
+    background-image: url('/assets/img/bg_beige.jpg');
+    background-size: 50% auto;
+    background-position: center center;
+    background-repeat: repeat;
   }
 
   &--black {
     background-color: @black;
+    background-image: url('/assets/img/bg_dark.jpg');
+    background-size: 50% auto;
+    background-position: center center;
+    background-repeat: repeat;
     color: @white;
     a {
       color: @white75;
@@ -119,15 +123,6 @@
   top: 0;
 }
 
-.left {
-  float: left;
-  margin-right: 20px;
-}
-
-.right {
-  float: right;
-  margin-left: 20px;
-}
 
 .ellipsis() {
   overflow: hidden;
