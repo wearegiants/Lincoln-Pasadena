@@ -3,11 +3,12 @@
 
 $(document).ready(function(){
 
-   $('.accordion-wrapper').accordion();
-   $(".background").background();
-   $(".gallery--zoom").lightbox();
-   $(".notification").on('click', function(){
-      $(this).fadeOut();
-   });
+$(".carousel").carousel();
+$('.accordion-wrapper').accordion();
+$(".background").background();
+$(".gallery--zoom").lightbox();
+$(".notification").on('click', function(){
+$(this).fadeOut();
+});
 
 });
