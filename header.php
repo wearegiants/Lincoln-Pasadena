@@ -25,12 +25,12 @@
 
 </head>
 
-<body class="fs-grid">
+<body class="fs-grid fs-grid-fluid">
 <div id="wrapper">
 
 <header id="header">
   <div class="fs-row">
-    <menu id="header-main" class="fs-cell fs-lg-5 fs-md-4 fs-sm-3 fs-centered">
+    <menu id="header-main" class="fs-cell fs-lg-4 fs-md-4 fs-sm-3 fs-centered">
       <hr class="invisible">
       <a href="/" id="header--logo">
         <img src="/assets/img/lincolnlogo.svg" alt="<?php bloginfo('name' );?>" class="img-responsive">
@@ -42,6 +42,9 @@
     <menu id="header-navigation" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 text-center">
       <?php if(!is_front_page()): ?><!--<a href="/" class="btn btn-nav btn-icon ss-glyphish-outlined ss-home"></a>--><?php endif; ?>
       <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
+      <a href="#" class="btn btn-nav btn-icon ss-social ss-facebook"></a>
+      <a href="#" class="btn btn-nav btn-icon ss-social ss-instagram"></a>
+      <a href="#" class="btn btn-nav btn-icon ss-social ss-twitter"></a>
     </menu>
   </div>
 </header>

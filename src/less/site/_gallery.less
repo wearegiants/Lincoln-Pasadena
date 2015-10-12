@@ -1,5 +1,46 @@
 .gallery {
 
+   .fs-carousel {
+      &-pagination {
+         position: absolute;
+         bottom: 0;
+      }
+   }
+
+   &--menu {
+
+      z-index: 9;
+      width: 100%;
+      .center();
+
+      &_btn {
+         display: block;
+         text-align: center;
+         padding: 10px 0;
+         opacity: .75;
+         &:hover {
+            opacity: 1;
+         }
+         img {
+            margin: auto;
+         }
+      }
+
+      &_wrapper {
+         z-index: 99;
+         @media @desktop {
+            //left: -79px;
+            position: relative;
+            //position: absolute;
+         }
+      }
+
+   }
+
+   &-wrapper {
+      position: relative;
+   }
+
    &--list {
 
       &_item {

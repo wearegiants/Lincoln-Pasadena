@@ -17,9 +17,17 @@
 <div id="home">
    <div id="home--intro" class="section section--notop">
       <div class="fs-row">
-         <div class="fs-cell fs-all-full">
-            <?php include locate_template('parts/gallery-carousel.php' ); ?>
-            <hr class="invisible">
+         <div class="fs-cell fs-all-full fs-contained gallery-wrapper equal-parent">
+            <div class="fs-cell fs-lg-1 fs-md-hide fs-sm-hide gallery--menu_wrapper fs-padded equal-child">
+               <div class="gallery--menu">
+                  <a href="#" class="gallery--menu_next gallery--menu_btn"><img src="/assets/img/arrow-up.svg" class="img-responsive" /></a>
+                  <a href="#" class="gallery--menu_prev gallery--menu_btn"><img src="/assets/img/arrow-down.svg" class="img-responsive" /></a>
+               </div>
+            </div>
+            <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3">
+               <?php include locate_template('parts/gallery-carousel.php' ); ?>
+               <hr class="invisible">
+            </div>
          </div>
          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-centered">
             <div id="home--copy" class="text-center">

@@ -8,6 +8,7 @@
 // @codekit-prepend "../bower_components/formstone/dist/js/lightbox.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/background.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/carousel.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/equalize.js"
 
 // Other Plugins
 

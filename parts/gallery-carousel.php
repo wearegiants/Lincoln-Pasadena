@@ -1,4 +1,4 @@
-<div class="gallery carousel">
+<div class="gallery carousel  equal-child">
 <?php 
 	if ($gallery) {
 		$images = $gallery;

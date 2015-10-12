@@ -38,39 +38,39 @@
     .font_size(14);
     position: relative;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50%;
-      height: 1px;
-      width: 8px;
-      background: @lightGray;
-      margin-top: -1px;
-      left: -4px;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50%;
-      margin-top: -1px;
-      height: 1px;
-      width: 8px;
-      background: @lightGray;
-      right: -4px;
-    }
+    // &:before {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   top: 50%;
+    //   height: 1px;
+    //   width: 8px;
+    //   background: @lightGray;
+    //   margin-top: -1px;
+    //   left: -4px;
+    // }
+// 
+    // &:after {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   top: 50%;
+    //   margin-top: -1px;
+    //   height: 1px;
+    //   width: 8px;
+    //   background: @lightGray;
+    //   right: -4px;
+    // }
 
     &:first-child {
-      padding-left: 0;
+      //padding-left: 0;
       &:before {
         display: none;
       }
     }
 
     &:last-child {
-      padding-right: 0;
+      //padding-right: 0;
       &:after {
         display: none;
       }
@@ -79,6 +79,11 @@
   }
 
   &-icon {
+    letter-spacing: 0;
+    padding: 0 3px;
+    a {
+      letter-spacing: inherit;
+    }
     &:before {
       position: relative;
       top: .1em;

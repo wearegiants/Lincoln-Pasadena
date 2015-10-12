@@ -8,7 +8,10 @@ $('.accordion-wrapper').accordion();
 $(".background").background();
 $(".gallery--zoom").lightbox();
 $(".notification").on('click', function(){
-$(this).fadeOut();
+  $(this).fadeOut();
+});
+$(".equal-parent").equalize({
+  target: ".equal-child"
 });
 
 });

@@ -49,5 +49,3 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 // Theme Wrangler
 
 include_once locate_template('/lib/tw_config.php' );
-
-?>
