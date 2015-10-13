@@ -12,12 +12,14 @@
 
 .section {
 
+   position: relative;
+
    @media @min {
       padding: @spaced 0;
    }
 
    @media @tablet {
-      padding: @spaced*2 0;
+      padding: @spaced*2 0 @spaced*4;
    }
 
    &--notop {
@@ -30,6 +32,22 @@
 
    &--small {
       padding: @spaced 0;
+   }
+
+   &-icon {
+
+      transform: translate(-50%, -50%);
+      margin: auto;
+      display: block;
+      max-width: 50px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      &.regular {
+         position: relative;
+         left: auto;
+         transform: translate(0, -50%);
+      }
    }
 
    header {

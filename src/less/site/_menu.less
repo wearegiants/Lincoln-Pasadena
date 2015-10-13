@@ -1,0 +1,65 @@
+.menu {
+
+  &-item {
+
+    padding: 13px 0;
+
+    &_title {
+      .headerFont();
+      .font_size(14);
+      font-weight: 500;
+      letter-spacing: 1px;
+      strong {
+        .mainFont();
+        .font_size(17);
+        letter-spacing: 0;
+        font-weight: normal;
+        text-transform: capitalize;
+      }
+    }
+
+    &_desc {
+
+      .headerFont();
+      .font_size(12);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+
+      p {
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+
+
+    }
+
+  }
+
+}
+
+#menu {
+
+  &--specials {
+
+    color: @white;
+    p,strong {
+      color: inherit;
+    }
+
+  }
+
+}
+
+
+.arrow {
+
+  &-body {
+    width: 1px;
+    height: 500px;
+    background: @black25;
+    margin: auto;
+  }
+
+}

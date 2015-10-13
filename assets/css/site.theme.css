@@ -343,6 +343,12 @@ form input[type=search].btn-link {
 form input[type=submit].btn-primary,
 form input[type=search].btn-primary {
   color: #ffffff;
+  font-family: 'proxima-nova', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 400;
   background: #666666;
 }
 form input[type=submit].btn-primary:hover,
@@ -491,6 +497,12 @@ form input[type=search].btn-success.btn-default {
 }
 .btn.btn-primary {
   color: #ffffff;
+  font-family: 'proxima-nova', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 400;
   background: #666666;
 }
 .btn.btn-primary:hover {
@@ -548,6 +560,9 @@ form input[type=search].btn-success.btn-default {
     padding: 0 0;
   }
 }
+.section {
+  position: relative;
+}
 @media screen and (min-width: 300px) {
   .section {
     padding: 25px 0;
@@ -555,7 +570,7 @@ form input[type=search].btn-success.btn-default {
 }
 @media screen and (min-width: 740px) {
   .section {
-    padding: 50px 0;
+    padding: 50px 0 100px;
   }
 }
 .section--notop {
@@ -566,6 +581,20 @@ form input[type=search].btn-success.btn-default {
 }
 .section--small {
   padding: 25px 0;
+}
+.section-icon {
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: block;
+  max-width: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.section-icon.regular {
+  position: relative;
+  left: auto;
+  transform: translate(0, -50%);
 }
 .section header h4 {
   margin-bottom: 43.75px;
@@ -657,10 +686,16 @@ form input[type=search].btn-success.btn-default {
 #footer p strong,
 #footer p b {
   font-family: 'proxima-nova', sans-serif;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+#footer--arrow {
+  display: block;
+  margin-top: -50px;
 }
 #footer--copyright {
   font-size: 15px;
@@ -765,14 +800,64 @@ form input[type=search].btn-success.btn-default {
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #231f20;
   font-size: 15px;
   font-size: 0.9375rem;
+}
+.accordion-item__question:after {
+  position: absolute;
+  top: .125em;
+  right: 10px;
 }
 .accordion-item__answer {
   padding-top: 15px;
 }
 .accordion-item:before {
   display: none;
+}
+.menu-item {
+  padding: 13px 0;
+}
+.menu-item_title {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.menu-item_title strong {
+  font-family: 'adobe-caslon-pro', 'georgia', serif;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  letter-spacing: 0;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.menu-item_desc {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.menu-item_desc p:last-child {
+  margin-bottom: 0;
+}
+#menu--specials {
+  color: #ffffff;
+}
+#menu--specials p,
+#menu--specials strong {
+  color: inherit;
+}
+.arrow-body {
+  width: 1px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.25);
+  margin: auto;
 }
 #bag {
   position: relative;

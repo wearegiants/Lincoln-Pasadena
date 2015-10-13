@@ -14,7 +14,7 @@
               
                <hr  class="fs-cell fs-lg-hide fs-md-full fs-sm-full divider">
                
-               <div class="fs-cell fs-lg-2 fs-md-hide fs-sm-hide">&nbsp;</div>
+               <div class="fs-cell fs-lg-2 fs-md-hide fs-sm-hide"><img src="/assets/img/arrow.svg" id="footer--arrow"></div>
                <div class="fs-cell fs-lg-5 fs-md-full fs-sm-3"><?php the_field('contact_info', 14); ?></div>
                
                <hr  class="fs-cell fs-all-full fs-md-hide fs-sm-hide invisible">

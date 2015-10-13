@@ -1,4 +1,3 @@
-// @codekit-prepend "site/shopify--cart.js"
 // @codekit-prepend "site/_accordion.js"
 
 $(document).ready(function(){

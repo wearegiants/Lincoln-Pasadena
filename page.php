@@ -1,10 +1,10 @@
 <?php Themewrangler::setup_page();get_header(); ?>
 
 <div id="page" class="section bg-color--gray">
-   
    <header>
       <div class="fs-row">
          <div class="fs-cell fs-all-full text-center">
+            <img src="/assets/img/icon-1.svg" class="section-icon regular">
             <h1><?php the_title(); ?></h1>
          </div>
       </div>
@@ -21,6 +21,8 @@
 
          <hr class="invisible">
 
+         <div class="fs-cell fs-lg-9 fs-md-5 fs-sm-3 fs-centered">
+         <div class="fs-row">
          <?php if(is_page('menu')): ?>
          <?php include locate_template('parts/menu.php' );?>
          <hr class="invisible">
@@ -43,6 +45,8 @@
          </div>
          <hr class="invisible">
          <?php endif; ?>
+         </div>
+         </div>
 
       </div>
    </div>
