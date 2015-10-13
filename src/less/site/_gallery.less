@@ -46,21 +46,68 @@
       &_item {
 
          &_bg {
-            height: 325px;
+            @media @min {
+               height: 150px;   
+            }
+            @media @tablet {
+               height: 220px;   
+            }
+            @media @desktop {
+               height: 325px;   
+            }
+            
             display: block;
             &.tall {
-               height: 650px;
+               @media @min {
+                  height: 300px;   
+               }
+               @media @tablet {
+                  height: 440px;   
+               }
+               @media @desktop {
+                  height: 650px;   
+               }
+               
+            }
+            &.full {
+               @media @min {
+                  height: 300px;   
+               }
+               @media @tablet {
+                  height: 440px;   
+               }
+               @media @desktop {
+                  height: 450px;   
+               }
+               
             }
          }
 
          &.description {
 
-            background: pink;
+            background: #C1DCDA;
             position: relative;
+
+            @media @min {
+               //display: none;
+            }
+            @media @tablet {
+               display: block;
+            }
 
             .wrapper {
                .center();
                width: 100%;
+            }
+
+            h4 {
+               .headerFont();
+               display: block;
+               color: @black;
+               .font_size(13);
+               text-transform: uppercase;
+               letter-spacing: 2px;
+               margin-bottom: 10px;
             }
 
             img {
