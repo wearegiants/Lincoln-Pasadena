@@ -4,7 +4,6 @@
    <header>
       <div class="fs-row">
          <div class="fs-cell fs-all-full text-center">
-            <img src="/assets/img/icon-1.svg" class="section-icon regular">
             <h1><?php the_title(); ?></h1>
          </div>
       </div>

@@ -1,0 +1,116 @@
+.gform, .gf {
+
+  &_wrapper {
+    background: @white;
+    padding: @spaced;
+  }
+
+  &_page {
+
+    &_steps {
+      .font_size(14);
+      border-bottom: 1px solid @bgGray!important;
+
+      .gf_step {
+        span {
+        .font_size(14)!important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        .headerFont();
+        }
+      }
+
+    }
+
+    &_footer {
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+      border: 0!important;
+      padding-top: 0!important;
+      .button {
+        line-height: 35px;
+        .font_size(14);
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        .headerFont();
+        background: @black;
+        color: @white;
+      }
+    }
+  }
+
+  &_body {
+    //background: @white;
+  }
+
+  &_fields {
+
+    padding: 0;
+
+    .gfield {
+
+      display: block;
+
+      &_label {
+        text-align: left;
+        margin-bottom: 0;
+        .headerFont();
+        .font_size(11);
+        text-transform: uppercase;
+        font-weight: 300!important;
+        letter-spacing: 1px;
+        color: @lightGray;
+        //display: none!important;
+      }
+
+      &_time {
+        &_minute, &_hour {
+          label, i {
+            display: none!important
+          }
+        }
+      }
+
+      .clear-multi {
+        > div {
+          max-width: 31.5%!important;
+          select {
+            max-width: 80%
+          }
+        }
+      }
+
+      .ginput_container {
+        margin: 0!important;
+        padding-bottom: 15px;
+      }
+
+      &:before {
+        display: none;
+      }
+
+      input {
+        padding: 0;
+        height: auto!important;
+        line-height: auto!important;
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        background: none;
+        border-bottom: 1px solid @lighterGray;
+        .font_size(15)!important;
+        .headerFont()!important;
+        &:hover, &:active, &:focus {
+          border: 0;
+          border-bottom: 1px solid @lighterGray;
+        }
+      }
+
+    }
+
+  }
+
+}
+
