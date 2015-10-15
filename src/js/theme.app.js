@@ -9,8 +9,11 @@ $(".gallery--zoom").lightbox();
 $(".notification").on('click', function(){
   $(this).fadeOut();
 });
-$(".equal-parent").equalize({
-  target: ".equal-child"
+
+$(".equal-parent").imagesLoaded( function() {
+  $(".equal-parent").equalize({
+    target: ".equal-child"
+  });
 });
 
 });

@@ -42,9 +42,9 @@
     <menu id="header-navigation" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 text-center">
       <?php if(!is_front_page()): ?><!--<a href="/" class="btn btn-nav btn-icon ss-glyphish-outlined ss-home"></a>--><?php endif; ?>
       <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
-      <a href="#" class="btn btn-nav btn-icon ss-social ss-facebook"></a>
-      <a href="#" class="btn btn-nav btn-icon ss-social ss-instagram"></a>
-      <a href="#" class="btn btn-nav btn-icon ss-social ss-twitter"></a>
+      <a href="https://www.facebook.com/Lincoln-Pasadena-307659522768903/" class="btn btn-nav btn-icon ss-social ss-facebook"></a>
+      <a href="https://instagram.com/lincolnpasadena/?hl=en" class="btn btn-nav btn-icon ss-social ss-instagram"></a>
+      <!--<a href="#" class="btn btn-nav btn-icon ss-social ss-twitter"></a>-->
     </menu>
   </div>
 </header>
