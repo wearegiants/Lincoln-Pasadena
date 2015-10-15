@@ -50,7 +50,7 @@
    <div id="home--store" class="section">
       <img src="/assets/img/icon-2.svg" class="section-icon">
       <div class="fs-row">
-         <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3 fs-centered">
+         <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
             <header><h4 class="title text-center">Store</h4></header>
             <div class="fs-cell fs-lg-8 fs-lg-push-2 fs-md-4 fs-md-push-1 fs-sm-3 fs-contained">
                <div id="home--copy" class="text-center">
@@ -65,7 +65,7 @@
    <div id="home--events" class="section  bg-color--beige">
       <img src="/assets/img/icon-3.svg" class="section-icon">
       <div class="fs-row">
-         <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3 fs-centered">
+         <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
             <header><h4 class="title text-center">Events</h4></header>
             <div class="fs-cell fs-lg-8 fs-lg-push-2 fs-md-4 fs-md-push-1 fs-sm-3 fs-contained">
                <div id="home--copy" class="text-center">
