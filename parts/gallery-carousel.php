@@ -1,4 +1,4 @@
-<div class="gallery carousel  equal-child">
+<div class="gallery carousel main equal-child rsMinW <?php echo $randoClass; ?>">
 <?php 
 	if ($gallery) {
 		$images = $gallery;

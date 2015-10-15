@@ -883,6 +883,10 @@ form input[type=search].btn-success.btn-default {
 #footer--copyright .wag:hover {
   opacity: 1;
 }
+.gallery.carousel {
+  clear: both;
+  position: relative;
+}
 .gallery .fs-carousel-pagination {
   position: absolute;
   bottom: 0;
@@ -914,7 +918,8 @@ form input[type=search].btn-success.btn-default {
 }
 @media screen and (min-width: 980px) {
   .gallery--menu_wrapper {
-    position: relative;
+    min-height: 100%;
+    position: absolute;
   }
 }
 .gallery-wrapper {

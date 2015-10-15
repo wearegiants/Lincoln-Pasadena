@@ -17,3 +17,4 @@
 // @codekit-prepend "../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"
 // @codekit-prepend "../bower_components/headhesive.js/dist/headhesive.js"
 // @codekit-prepend "../bower_components/imagesloaded/imagesloaded.pkgd.js"
+// @codekit-prepend "../bower_components/royalslider/jquery.royalslider.min.js"

@@ -24,13 +24,13 @@
                   <a href="#" class="gallery--menu_prev gallery--menu_btn"><img src="/assets/img/arrow-down.svg" class="img-responsive" /></a>
                </div>
             </div>
-            <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3">
-               <?php include locate_template('parts/gallery-carousel.php' ); ?>
-               <hr class="invisible">
+            <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+               <?php $randoClass =' main '; include locate_template('parts/gallery-carousel.php' ); ?>
             </div>
          </div>
          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-centered">
             <div id="home--copy" class="text-center">
+               <hr class="invisible">
                <?php the_post(); the_content(); ?>
             </div>
          </div>
@@ -58,7 +58,7 @@
                   <hr class="invisible">
                </div>
             </div>
-            <?php $gallery = get_field('store_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
+            <?php $randoClass =' notmain '; $gallery = get_field('store_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
          </div>
       </div>
    </div>
