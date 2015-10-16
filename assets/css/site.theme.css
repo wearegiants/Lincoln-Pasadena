@@ -222,6 +222,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  height: 30px;
   font-size: 13px !important;
   font-size: 0.8125rem !important;
   font-family: 'proxima-nova', sans-serif !important;
