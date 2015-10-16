@@ -218,6 +218,19 @@ textarea {
 textarea {
   resize: vertical;
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 13px !important;
+  font-size: 0.8125rem !important;
+  font-family: 'proxima-nova', sans-serif !important;
+  background: #ffffff url('/assets/img/triangledown.svg') center right no-repeat;
+  background-size: auto 80%;
+  border: 1px solid #e7e7ec;
+  padding: 0 8px;
+  position: relative;
+}
 menu {
   margin: 0;
   padding: 0;
