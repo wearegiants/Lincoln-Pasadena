@@ -42,6 +42,7 @@ $(document).ready(function(){
     autoScaleSliderWidth: 1280,
     autoScaleSliderHeight: 720,
     loopRewind: true,
+    //arrowsNavAutoHide: false,
     numImagesToPreload: 1,
     keyboardNavEnabled: true,
     usePreloader: false,
@@ -50,9 +51,9 @@ $(document).ready(function(){
     slidesSpacing: 0
   });
 
-  if ( $( ".carousel.main" ).length ) {
+  if ( $('#home--intro .carousel').length ) {
 
-    var slider = $(".carousel.main").data('royalSlider');
+    var slider = $('#home--intro .carousel').data('royalSlider');
   
     $(".gallery--menu_prev").on('click', function(e){
       e.preventDefault();
@@ -65,6 +66,16 @@ $(document).ready(function(){
     });
 
   }
+
+  $(".gallery-wrapped .gallery--menu_next").on('click', function(event){
+    event.preventDefault;
+    $(this).parent().parent().parent().find('.rsArrowRight').click();
+  });
+
+  $(".gallery-wrapped .gallery--menu_prev").on('click', function(event){
+    event.preventDefault;
+    $(this).parent().parent().parent().find('.rsArrowLeft').click();
+  });
 
  //$(".equal-parent").equalize({
  //  target: ".equal-child"

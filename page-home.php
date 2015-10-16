@@ -47,9 +47,12 @@
          </div>
       </div>
    </div>
+
    <div id="home--store" class="section">
       <img src="/assets/img/icon-2.svg" class="section-icon">
       <div class="fs-row">
+
+
          <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
             <header><h4 class="title text-center">Store</h4></header>
             <div class="fs-cell fs-lg-8 fs-lg-push-2 fs-md-4 fs-md-push-1 fs-sm-3 fs-contained">
@@ -58,10 +61,20 @@
                   <hr class="invisible">
                </div>
             </div>
-            <?php $randoClass =' notmain '; $gallery = get_field('store_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
+             <div class="gallery-wrapped">
+               <div class="fs-cell fs-lg-1 fs-md-hide fs-sm-hide gallery--menu_wrapper fs-padded equal-child">
+                  <div class="gallery--menu">
+                     <a href="#" class="gallery--menu_next gallery--menu_btn"><img src="/assets/img/arrow-up.svg" class="img-responsive" /></a>
+                     <a href="#" class="gallery--menu_prev gallery--menu_btn"><img src="/assets/img/arrow-down.svg" class="img-responsive" /></a>
+                  </div>
+               </div>
+               <?php $randoClass =' notmain '; $gallery = get_field('store_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
+            </div>
          </div>
+
       </div>
    </div>
+
    <div id="home--events" class="section  bg-color--beige">
       <img src="/assets/img/icon-3.svg" class="section-icon">
       <div class="fs-row">
@@ -73,7 +86,15 @@
                   <hr class="invisible">
                </div>
             </div>
-            <?php $gallery = get_field('events_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
+            <div class="gallery-wrapped">
+               <div class="fs-cell fs-lg-1 fs-md-hide fs-sm-hide gallery--menu_wrapper fs-padded equal-child">
+                  <div class="gallery--menu">
+                     <a href="#" class="gallery--menu_next gallery--menu_btn"><img src="/assets/img/arrow-up.svg" class="img-responsive" /></a>
+                     <a href="#" class="gallery--menu_prev gallery--menu_btn"><img src="/assets/img/arrow-down.svg" class="img-responsive" /></a>
+                  </div>
+               </div>
+               <?php $gallery = get_field('events_gallery'); include locate_template('parts/gallery-carousel.php' ); ?>
+            </div>
          </div>
       </div>
    </div>

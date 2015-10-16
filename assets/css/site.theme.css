@@ -905,6 +905,17 @@ form input[type=search].btn-success.btn-default {
   position: absolute;
   bottom: 0;
 }
+.gallery-wrapped {
+  clear: both;
+  position: relative;
+}
+.gallery-wrapped .gallery--menu_wrapper {
+  left: -77px;
+}
+.gallery-wrapped .rsNav,
+.gallery-wrapped .rsArrow {
+  visibility: hidden!important;
+}
 .gallery--menu {
   z-index: 9;
   width: 100%;
