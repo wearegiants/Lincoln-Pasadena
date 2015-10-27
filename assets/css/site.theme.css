@@ -8,18 +8,18 @@
   background-repeat: repeat;
 }
 .bg-color--black {
-  background-color: #231f20;
+  background-color: #231F20;
   background-image: url('/assets/img/bg_dark.jpg');
   background-size: 50% auto;
   background-position: center center;
   background-repeat: repeat;
-  color: #ffffff;
+  color: #fff;
 }
 .bg-color--black a {
   color: rgba(255, 255, 255, 0.75);
 }
 .bg-color--black a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .bg-color--black .divider {
   background: rgba(255, 255, 255, 0.25);
@@ -30,7 +30,7 @@
 .bg-color--black h4,
 .bg-color--black h5,
 .bg-color--black h6 {
-  color: #ffffff;
+  color: #fff;
 }
 .img-responsive {
   display: block;
@@ -128,7 +128,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #d64242;
+  color: #D64242;
 }
 a {
   text-decoration: none;
@@ -183,13 +183,13 @@ li:before {
 hr {
   width: 100%;
   height: 1px;
-  background: #ffffff;
+  background: #fff;
   border: none;
   clear: both;
   margin: 25px 0;
 }
 hr.thin {
-  background: #e7e7ec;
+  background: #E7E7EC;
 }
 iframe {
   border: none;
@@ -226,9 +226,9 @@ select {
   font-size: 13px !important;
   font-size: 0.8125rem !important;
   font-family: 'proxima-nova', sans-serif !important;
-  background: #ffffff url('/assets/img/triangledown.svg') center right no-repeat;
+  background: #fff url('/assets/img/triangledown.svg') center right no-repeat;
   background-size: auto 80%;
-  border: 1px solid #e7e7ec;
+  border: 1px solid #E7E7EC;
   padding: 0 8px;
   position: relative;
 }
@@ -287,14 +287,14 @@ form input[type=submit].btn-default,
 form input[type=search].btn-default,
 form input[type=submit].epm-submit-chimp,
 form input[type=search].epm-submit-chimp {
-  box-shadow: inset 0 0 0 1px #cbcbd2;
+  box-shadow: inset 0 0 0 1px #CBCBD2;
   background: none;
 }
 form input[type=submit].btn-default:hover,
 form input[type=search].btn-default:hover,
 form input[type=submit].epm-submit-chimp:hover,
 form input[type=search].epm-submit-chimp:hover {
-  background: #f2f2f2;
+  background: #F2F2F2;
 }
 form input[type=submit].btn-first,
 form input[type=search].btn-first {
@@ -312,7 +312,24 @@ form input[type=search]-nav {
   font-size: 14px;
   font-size: 0.875rem;
   position: relative;
-  padding: 0 5px;
+}
+@media screen and (min-width: 300px) {
+  form input[type=submit]-nav,
+  form input[type=search]-nav {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding: 0 2px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 500px) {
+  form input[type=submit]-nav,
+  form input[type=search]-nav {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 0 5px;
+    letter-spacing: 3px;
+  }
 }
 form input[type=submit]-nav:first-child:before,
 form input[type=search]-nav:first-child:before {
@@ -357,9 +374,9 @@ form input[type=search].btn-sm {
 }
 form input[type=submit].disabled,
 form input[type=search].disabled {
-  background: #f2f2f2;
-  color: #cbcbd2;
-  box-shadow: inset 0 0 0 1px #e7e7ec;
+  background: #F2F2F2;
+  color: #CBCBD2;
+  box-shadow: inset 0 0 0 1px #E7E7EC;
   pointer-events: none;
 }
 form input[type=submit].btn-link,
@@ -369,7 +386,7 @@ form input[type=search].btn-link {
 }
 form input[type=submit].btn-primary,
 form input[type=search].btn-primary {
-  color: #ffffff;
+  color: #fff;
   font-family: 'proxima-nova', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -384,30 +401,30 @@ form input[type=search].btn-primary:hover {
 }
 form input[type=submit].btn-danger,
 form input[type=search].btn-danger {
-  color: #ffffff;
-  background: #d64242;
+  color: #fff;
+  background: #D64242;
 }
 form input[type=submit].btn-danger.btn-default,
 form input[type=search].btn-danger.btn-default {
-  color: #d64242;
+  color: #D64242;
   background: none;
-  box-shadow: inset 0 0 0 1px #d64242;
+  box-shadow: inset 0 0 0 1px #D64242;
 }
 form input[type=submit].btn-success,
 form input[type=search].btn-success {
-  color: #ffffff;
-  background: #74c080;
+  color: #fff;
+  background: #74C080;
 }
 form input[type=submit].btn-success.btn-default,
 form input[type=search].btn-success.btn-default {
-  color: #74c080;
+  color: #74C080;
   background: none;
-  box-shadow: inset 0 0 0 1px #74c080;
+  box-shadow: inset 0 0 0 1px #74C080;
 }
 .alert {
   font-size: 15px;
   font-size: 0.9375rem;
-  background: #e7e7ec;
+  background: #E7E7EC;
   color: #666666;
   display: block;
   margin: 0 0 10px 0;
@@ -420,12 +437,12 @@ form input[type=search].btn-success.btn-default {
   color: inherit;
 }
 .alert.alert-danger {
-  background: #d64242;
-  color: #ffffff;
+  background: #D64242;
+  color: #fff;
 }
 .alert.alert-success {
-  background: #74c080;
-  color: #ffffff;
+  background: #74C080;
+  color: #fff;
 }
 .text-left {
   text-align: left;
@@ -437,7 +454,7 @@ form input[type=search].btn-success.btn-default {
   text-align: right;
 }
 .divider {
-  background: #e7e7ec;
+  background: #E7E7EC;
 }
 .divider.vertical {
   width: 1px;
@@ -463,14 +480,14 @@ form input[type=search].btn-success.btn-default {
 .button.btn-default,
 .btn.epm-submit-chimp,
 .button.epm-submit-chimp {
-  box-shadow: inset 0 0 0 1px #cbcbd2;
+  box-shadow: inset 0 0 0 1px #CBCBD2;
   background: none;
 }
 .btn.btn-default:hover,
 .button.btn-default:hover,
 .btn.epm-submit-chimp:hover,
 .button.epm-submit-chimp:hover {
-  background: #f2f2f2;
+  background: #F2F2F2;
 }
 .btn.btn-first,
 .button.btn-first {
@@ -488,7 +505,24 @@ form input[type=search].btn-success.btn-default {
   font-size: 14px;
   font-size: 0.875rem;
   position: relative;
-  padding: 0 5px;
+}
+@media screen and (min-width: 300px) {
+  .btn-nav,
+  .button-nav {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding: 0 2px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .btn-nav,
+  .button-nav {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 0 5px;
+    letter-spacing: 3px;
+  }
 }
 .btn-nav:first-child:before,
 .button-nav:first-child:before {
@@ -533,9 +567,9 @@ form input[type=search].btn-success.btn-default {
 }
 .btn.disabled,
 .button.disabled {
-  background: #f2f2f2;
-  color: #cbcbd2;
-  box-shadow: inset 0 0 0 1px #e7e7ec;
+  background: #F2F2F2;
+  color: #CBCBD2;
+  box-shadow: inset 0 0 0 1px #E7E7EC;
   pointer-events: none;
 }
 .btn.btn-link,
@@ -545,7 +579,7 @@ form input[type=search].btn-success.btn-default {
 }
 .btn.btn-primary,
 .button.btn-primary {
-  color: #ffffff;
+  color: #fff;
   font-family: 'proxima-nova', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -560,25 +594,25 @@ form input[type=search].btn-success.btn-default {
 }
 .btn.btn-danger,
 .button.btn-danger {
-  color: #ffffff;
-  background: #d64242;
+  color: #fff;
+  background: #D64242;
 }
 .btn.btn-danger.btn-default,
 .button.btn-danger.btn-default {
-  color: #d64242;
+  color: #D64242;
   background: none;
-  box-shadow: inset 0 0 0 1px #d64242;
+  box-shadow: inset 0 0 0 1px #D64242;
 }
 .btn.btn-success,
 .button.btn-success {
-  color: #ffffff;
-  background: #74c080;
+  color: #fff;
+  background: #74C080;
 }
 .btn.btn-success.btn-default,
 .button.btn-success.btn-default {
-  color: #74c080;
+  color: #74C080;
   background: none;
-  box-shadow: inset 0 0 0 1px #74c080;
+  box-shadow: inset 0 0 0 1px #74C080;
 }
 #error {
   position: relative;
@@ -609,14 +643,14 @@ form input[type=search].btn-success.btn-default {
 }
 .gform_wrapper,
 .gf_wrapper {
-  background: #ffffff;
+  background: #fff;
   padding: 25px;
 }
 .gform_page_steps,
 .gf_page_steps {
   font-size: 14px;
   font-size: 0.875rem;
-  border-bottom: 1px solid #f2f2f2 !important;
+  border-bottom: 1px solid #F2F2F2 !important;
 }
 .gform_page_steps .gf_step span,
 .gf_page_steps .gf_step span {
@@ -643,8 +677,8 @@ form input[type=search].btn-success.btn-default {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: 'proxima-nova', sans-serif;
-  background: #231f20;
-  color: #ffffff;
+  background: #231F20;
+  color: #fff;
 }
 .gform_fields,
 .gf_fields {
@@ -664,7 +698,7 @@ form input[type=search].btn-success.btn-default {
   text-transform: uppercase;
   font-weight: 300!important;
   letter-spacing: 1px;
-  color: #cbcbd2;
+  color: #CBCBD2;
 }
 .gform_fields .gfield_time_minute label,
 .gf_fields .gfield_time_minute label,
@@ -702,7 +736,7 @@ form input[type=search].btn-success.btn-default {
   min-width: 100%;
   margin: 0;
   background: none;
-  border-bottom: 1px solid #e7e7ec;
+  border-bottom: 1px solid #E7E7EC;
   font-size: 15px !important;
   font-size: 0.9375rem !important;
   font-family: 'proxima-nova', sans-serif !important;
@@ -714,7 +748,7 @@ form input[type=search].btn-success.btn-default {
 .gform_fields .gfield input:focus,
 .gf_fields .gfield input:focus {
   border: 0;
-  border-bottom: 1px solid #e7e7ec;
+  border-bottom: 1px solid #E7E7EC;
 }
 #wrapper {
   max-width: 1500px;
@@ -795,7 +829,7 @@ form input[type=search].btn-success.btn-default {
 #header--logo {
   margin: 0;
   font-weight: 700;
-  color: #d64242;
+  color: #D64242;
 }
 #header .menu {
   padding: 0;
@@ -830,7 +864,7 @@ form input[type=search].btn-success.btn-default {
 }
 #splash {
   color: rgba(255, 255, 255, 0.5);
-  background: #231f20;
+  background: #231F20;
   height: 100%;
   left: 0;
   position: absolute;
@@ -884,7 +918,7 @@ form input[type=search].btn-success.btn-default {
   font-size: 11px;
   font-size: 0.6875rem;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   opacity: .25;
@@ -1019,7 +1053,7 @@ form input[type=search].btn-success.btn-default {
 .gallery--list_item.description h4 {
   font-family: 'proxima-nova', sans-serif;
   display: block;
-  color: #231f20;
+  color: #231F20;
   font-size: 13px;
   font-size: 0.8125rem;
   text-transform: uppercase;
@@ -1052,7 +1086,7 @@ form input[type=search].btn-success.btn-default {
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #231f20;
+  color: #231F20;
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -1099,7 +1133,7 @@ form input[type=search].btn-success.btn-default {
   margin-bottom: 0;
 }
 #menu--specials {
-  color: #ffffff;
+  color: #fff;
 }
 #menu--specials p,
 #menu--specials strong {
@@ -1131,7 +1165,7 @@ form input[type=search].btn-success.btn-default {
   position: relative;
 }
 #bag--wrapper {
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   position: absolute;
   right: 0;

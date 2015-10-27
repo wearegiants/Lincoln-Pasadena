@@ -38,7 +38,18 @@
     font-weight: 500;
     .font_size(14);
     position: relative;
-    padding: 0 5px;
+    //padding: 0 5px;
+
+    @media @min {
+      .font_size(13);
+      padding: 0 2px;
+      letter-spacing: 1px;
+    }
+    @media @mobile {
+      .font_size(14);
+      padding: 0 5px;
+      letter-spacing: 3px;
+    }
 
     // &:before {
     //   content: '';
