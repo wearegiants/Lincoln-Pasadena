@@ -318,8 +318,8 @@ form input[type=search]-nav {
   form input[type=search]-nav {
     font-size: 13px;
     font-size: 0.8125rem;
-    padding: 0 2px;
-    letter-spacing: 1px;
+    padding: 0 1px;
+    letter-spacing: 0px;
   }
 }
 @media screen and (min-width: 500px) {
@@ -511,8 +511,8 @@ form input[type=search].btn-success.btn-default {
   .button-nav {
     font-size: 13px;
     font-size: 0.8125rem;
-    padding: 0 2px;
-    letter-spacing: 1px;
+    padding: 0 1px;
+    letter-spacing: 0px;
   }
 }
 @media screen and (min-width: 500px) {
