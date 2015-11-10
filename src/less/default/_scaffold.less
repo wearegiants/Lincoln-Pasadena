@@ -122,13 +122,16 @@
    }
 
    &_centered {
+      @media @desktop {
+         .center();
+      }
       position: relative;
       width: 100%;
       padding: @spaced 0;
    }
 
    &--content {
-      min-height: 400px;
+      //min-height: 400px;
       position: relative;
       box-shadow: 0 0 @spaced @black25;
    }

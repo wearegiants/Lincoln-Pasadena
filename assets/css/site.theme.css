@@ -861,8 +861,17 @@ form input[type=search].btn-success.btn-default {
   width: 100%;
   padding: 25px 0;
 }
+@media screen and (min-width: 980px) {
+  .notification_centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 .notification--content {
-  min-height: 400px;
   position: relative;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }

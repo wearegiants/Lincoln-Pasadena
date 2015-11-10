@@ -9,8 +9,8 @@
                <hr class="invisible">
                <div id="home--notification_content" class="notification--content fs-row equalize  bg-color--beige">
                   <a href="#" class="notification--close ss-gizmo ss-delete"></a>
-                  <div class="equalize-child fs-cell fs-lg-hide fs-md-6 fs-sm-3 fs-contained"><img src="<?php the_field('popup_image'); ?>" class="img-responsive" /></div>
-                  <div class="equalize-child fs-cell fs-lg-half fs-md-hide fs-sm-hide fs-contained"><img src="<?php the_field('popup_image_mobile'); ?>" class="img-responsive" /></div>
+                  <div class="equalize-child fs-cell fs-lg-hide fs-md-6 fs-sm-3 fs-contained"><img src="<?php the_field('popup_image_mobile'); ?>" class="img-responsive" /></div>
+                  <div class="equalize-child fs-cell fs-lg-half fs-md-hide fs-sm-hide fs-contained"><img src="<?php the_field('popup_image'); ?>" class="img-responsive" /></div>
                   <?php if(get_field('pop_up_content')): ?>
                   <div class="equalize-child fs-cell fs-lg-half fs-md-full fs-sm-3 fs-contained"><div class="wrapper"><?php the_field('pop_up_content'); ?></div></div>
                   <?php endif; ?>
