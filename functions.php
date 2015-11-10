@@ -13,6 +13,9 @@ include_once ('lib/soil/soil.php' );
 include_once ('lib/roots-rewrites-master/roots-rewrites.php' );
 include_once ('lib/opengraph/opengraph.php' );
 
+// Auto Update Plugins
+add_filter( 'auto_update_plugin', '__return_true' );
+
 // Includes
 
 function my_acf_settings_path( $path ) {

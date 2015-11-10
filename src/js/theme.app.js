@@ -6,8 +6,9 @@ $(document).ready(function(){
   $('.accordion-wrapper').accordion();
   $(".background").background();
   $(".gallery--zoom").lightbox();
-  $(".notification").on('click', function(){
-    $(this).fadeOut();
+
+  $(".notification--close").on('click', function(){
+    $('.notification').fadeOut();
   });
 
   $('#home--intro .carousel').royalSlider({

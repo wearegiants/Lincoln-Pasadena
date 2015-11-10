@@ -80,13 +80,52 @@
 
    .cover();
    position: fixed;
-   padding-top: 25%;
+   z-index: 999;
+   padding: @spaced;
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+   background: fade(@white, 20%);
+
+   img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+   }
+
+   &--close {
+      position: absolute;
+      z-index: 99;
+      right: 0;
+      background: @black;
+      color: @white;
+      display: block;
+      //top: -50%;
+      //right: -50%;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      transform: translate(50%,-50%);
+      &:hover {
+         color: @white;
+      }
+      &:before {
+         position: relative;
+         top: .125em;
+      }
+   }
+
+   &_centered {
+      position: relative;
+      width: 100%;
+      padding: @spaced 0;
+   }
 
    &--content {
       min-height: 400px;
-      background: #FAF4EC;
+      position: relative;
       box-shadow: 0 0 @spaced @black25;
-      opacity: .95;
    }
 
 }

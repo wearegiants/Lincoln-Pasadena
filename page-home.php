@@ -2,12 +2,18 @@
 
 <?php if(get_field('enable_notification')): ?>
 <div id="home--notification" class="notification">
-   <div class="fs-row">
-      <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
-         <div id="home--notification_content" class="notification--content">
-            <div class="wrapper">
-               Hey Girl
+   <div class="notification_centered">
+      <div class="fs-row">
+         <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3 fs-centered">
+            <hr class="invisible">
+            <div id="home--notification_content" class="notification--content">
+               <a href="#" class="notification--close ss-gizmo ss-delete"></a>
+               <img src="<?php the_field('popup_image'); ?>" class="img-responsive" />
+               <?php if(get_field('pop_up_content')): ?>
+               <div class="wrapper bg-color--beige"><?php the_field('pop_up_content'); ?></div>
+               <?php endif; ?>
             </div>
+            <hr class="invisible">
          </div>
       </div>
    </div>
