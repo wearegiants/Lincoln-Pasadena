@@ -7,6 +7,13 @@ $(document).ready(function(){
   $(".background").background();
   $(".gallery--zoom").lightbox();
 
+  $('.equalize').imagesLoaded( function() {
+    $(".equalize").equalize({
+      target: ".equalize-child",
+      minWidth: '740px'
+    });
+  });
+
   $(".notification--close").on('click', function(){
     $('.notification').fadeOut();
   });

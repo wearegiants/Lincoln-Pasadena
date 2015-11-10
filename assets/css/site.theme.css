@@ -759,6 +759,10 @@ form input[type=search].btn-success.btn-default {
     padding: 0 0;
   }
 }
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
 .section {
   position: relative;
 }
@@ -1217,6 +1221,22 @@ form input[type=search].btn-success.btn-default {
 @media screen and (min-width: 740px) {
   .notification .wrapper {
     padding: 50px;
+  }
+}
+.notification .equalize-child {
+  position: relative;
+}
+.notification .equalize-child .wrapper {
+  width: 100%;
+}
+@media screen and (min-width: 980px) {
+  .notification .equalize-child .wrapper {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 #bag {

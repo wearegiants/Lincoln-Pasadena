@@ -3,18 +3,20 @@
 <?php if(get_field('enable_notification')): ?>
 <div id="home--notification" class="notification">
    <div class="notification_centered">
-      <div class="fs-row">
-         <div class="fs-cell fs-lg-9 fs-md-5 fs-sm-3 fs-centered">
-            <hr class="invisible">
-            <div id="home--notification_content" class="notification--content">
-               <a href="#" class="notification--close ss-gizmo ss-delete"></a>
-               <div class="fs-cell fs-all-full fs-md-hide fs-sm-hide fs-contained"><img src="<?php the_field('popup_image'); ?>" class="img-responsive" /></div>
-               <div class="fs-cell fs-lg-hide fs-md-full fs-sm-3 fs-contained"><img src="<?php the_field('popup_image_mobile'); ?>" class="img-responsive" /></div>
-               <?php if(get_field('pop_up_content')): ?>
-               <div class="wrapper bg-color--beige"><?php the_field('pop_up_content'); ?></div>
-               <?php endif; ?>
+      <div class="content">
+         <div class="fs-row">
+            <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3 fs-centered">
+               <hr class="invisible">
+               <div id="home--notification_content" class="notification--content fs-row equalize  bg-color--beige">
+                  <a href="#" class="notification--close ss-gizmo ss-delete"></a>
+                  <div class="equalize-child fs-cell fs-lg-hide fs-md-6 fs-sm-3 fs-contained"><img src="<?php the_field('popup_image'); ?>" class="img-responsive" /></div>
+                  <div class="equalize-child fs-cell fs-lg-half fs-md-hide fs-sm-hide fs-contained"><img src="<?php the_field('popup_image_mobile'); ?>" class="img-responsive" /></div>
+                  <?php if(get_field('pop_up_content')): ?>
+                  <div class="equalize-child fs-cell fs-lg-half fs-md-full fs-sm-3 fs-contained"><div class="wrapper"><?php the_field('pop_up_content'); ?></div></div>
+                  <?php endif; ?>
+               </div>
+               <hr class="invisible">
             </div>
-            <hr class="invisible">
          </div>
       </div>
    </div>
