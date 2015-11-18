@@ -296,6 +296,12 @@ form input[type=submit].epm-submit-chimp:hover,
 form input[type=search].epm-submit-chimp:hover {
   background: #F2F2F2;
 }
+form input[type=submit].ss-gizmo:before,
+form input[type=search].ss-gizmo:before {
+  position: relative;
+  top: .125em;
+  margin-right: 8px;
+}
 form input[type=submit].btn-first,
 form input[type=search].btn-first {
   padding-left: 0;
@@ -488,6 +494,12 @@ form input[type=search].btn-success.btn-default {
 .btn.epm-submit-chimp:hover,
 .button.epm-submit-chimp:hover {
   background: #F2F2F2;
+}
+.btn.ss-gizmo:before,
+.button.ss-gizmo:before {
+  position: relative;
+  top: .125em;
+  margin-right: 8px;
 }
 .btn.btn-first,
 .button.btn-first {
