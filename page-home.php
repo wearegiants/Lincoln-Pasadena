@@ -1,6 +1,6 @@
 <?php Themewrangler::setup_page();get_header(/***Template Name: Homepage */); ?>
 
-<?php if(!get_field('enable_notification')): ?>
+<?php if(get_field('enable_notification')): ?>
 <div id="home--notification" class="notification">
    <div class="notification_centered">
       <div class="content">
@@ -52,12 +52,6 @@
             <header><h4 class="title text-center">Menu</h4></header>
          </div>
          <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3 fs-centered">
-            
-            <div class="text-center">
-            <a href="<?php the_field('menu_file',6); ?>" download class="btn btn-primary ss-gizmo ss-file"><?php the_field('menu_label',6); ?></a>
-            <hr class="invisible compact">
-            </div>
-            
             <?php include locate_template('parts/menu.php' );?>
          </div>
       </div>

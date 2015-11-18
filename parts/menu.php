@@ -1,3 +1,10 @@
+<?php if(!get_field('display_menu')): ?>
+<div class="text-center">
+<a href="<?php the_field('menu_file',6); ?>" download class="btn btn-primary ss-gizmo ss-file"><?php the_field('menu_label',6); ?></a>
+<hr class="invisible compact">
+</div>
+<?php endif; ?>
+
 <div class="fs-row equal-parent">
 
    <div class="fs-cell fs-lg-5 fs-md-half fs-sm-full equal-child">
