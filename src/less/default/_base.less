@@ -229,9 +229,15 @@ form textarea {
   }
 }
 
+form textarea,
 form input[type=submit],
 form input[type=search] {
   .btn();
+}
+
+form textarea {
+  border: 1px solid @lighterGray;
+  cursor: auto;
 }
 
 .alert {

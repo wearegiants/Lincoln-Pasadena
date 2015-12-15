@@ -75,7 +75,7 @@ img.rounded {
 *:active,
 *:focus {
   -webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
-          transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
 }
 *:focus,
 *:hover,
@@ -267,6 +267,7 @@ form input[type=search]:focus,
 form textarea:focus {
   border: 1px solid #666666;
 }
+form textarea,
 form input[type=submit],
 form input[type=search] {
   cursor: pointer;
@@ -283,29 +284,36 @@ form input[type=search] {
   line-height: 34px;
   font-family: 'proxima-nova', sans-serif;
 }
+form textarea.btn-default,
 form input[type=submit].btn-default,
 form input[type=search].btn-default,
+form textarea.epm-submit-chimp,
 form input[type=submit].epm-submit-chimp,
 form input[type=search].epm-submit-chimp {
   box-shadow: inset 0 0 0 1px #CBCBD2;
   background: none;
 }
+form textarea.btn-default:hover,
 form input[type=submit].btn-default:hover,
 form input[type=search].btn-default:hover,
+form textarea.epm-submit-chimp:hover,
 form input[type=submit].epm-submit-chimp:hover,
 form input[type=search].epm-submit-chimp:hover {
   background: #F2F2F2;
 }
+form textarea.ss-gizmo:before,
 form input[type=submit].ss-gizmo:before,
 form input[type=search].ss-gizmo:before {
   position: relative;
   top: .125em;
   margin-right: 8px;
 }
+form textarea.btn-first,
 form input[type=submit].btn-first,
 form input[type=search].btn-first {
   padding-left: 0;
 }
+form textarea-nav,
 form input[type=submit]-nav,
 form input[type=search]-nav {
   margin-bottom: 0;
@@ -320,6 +328,7 @@ form input[type=search]-nav {
   position: relative;
 }
 @media screen and (min-width: 300px) {
+  form textarea-nav,
   form input[type=submit]-nav,
   form input[type=search]-nav {
     font-size: 13px;
@@ -329,6 +338,7 @@ form input[type=search]-nav {
   }
 }
 @media screen and (min-width: 500px) {
+  form textarea-nav,
   form input[type=submit]-nav,
   form input[type=search]-nav {
     font-size: 14px;
@@ -337,23 +347,28 @@ form input[type=search]-nav {
     letter-spacing: 3px;
   }
 }
+form textarea-nav:first-child:before,
 form input[type=submit]-nav:first-child:before,
 form input[type=search]-nav:first-child:before {
   display: none;
 }
+form textarea-nav:last-child:after,
 form input[type=submit]-nav:last-child:after,
 form input[type=search]-nav:last-child:after {
   display: none;
 }
+form textarea-icon,
 form input[type=submit]-icon,
 form input[type=search]-icon {
   letter-spacing: 0;
   padding: 0 3px;
 }
+form textarea-icon a,
 form input[type=submit]-icon a,
 form input[type=search]-icon a {
   letter-spacing: inherit;
 }
+form textarea-icon:before,
 form input[type=submit]-icon:before,
 form input[type=search]-icon:before {
   position: relative;
@@ -361,6 +376,7 @@ form input[type=search]-icon:before {
   font-size: 16px;
   font-size: 1rem;
 }
+form textarea.btn-lg,
 form input[type=submit].btn-lg,
 form input[type=search].btn-lg {
   font-size: 20px;
@@ -370,6 +386,7 @@ form input[type=search].btn-lg {
   padding: 0 25px;
   line-height: 34px;
 }
+form textarea.btn-sm,
 form input[type=submit].btn-sm,
 form input[type=search].btn-sm {
   font-size: 12px;
@@ -378,6 +395,7 @@ form input[type=search].btn-sm {
   padding: 0 25px;
   line-height: 34px;
 }
+form textarea.disabled,
 form input[type=submit].disabled,
 form input[type=search].disabled {
   background: #F2F2F2;
@@ -385,11 +403,13 @@ form input[type=search].disabled {
   box-shadow: inset 0 0 0 1px #E7E7EC;
   pointer-events: none;
 }
+form textarea.btn-link,
 form input[type=submit].btn-link,
 form input[type=search].btn-link {
   box-shadow: inset 0 0 2px transparent;
   text-decoration: underline;
 }
+form textarea.btn-primary,
 form input[type=submit].btn-primary,
 form input[type=search].btn-primary {
   color: #fff;
@@ -401,31 +421,40 @@ form input[type=search].btn-primary {
   font-weight: 400;
   background: #666666;
 }
+form textarea.btn-primary:hover,
 form input[type=submit].btn-primary:hover,
 form input[type=search].btn-primary:hover {
   background: #4d4d4d;
 }
+form textarea.btn-danger,
 form input[type=submit].btn-danger,
 form input[type=search].btn-danger {
   color: #fff;
   background: #D64242;
 }
+form textarea.btn-danger.btn-default,
 form input[type=submit].btn-danger.btn-default,
 form input[type=search].btn-danger.btn-default {
   color: #D64242;
   background: none;
   box-shadow: inset 0 0 0 1px #D64242;
 }
+form textarea.btn-success,
 form input[type=submit].btn-success,
 form input[type=search].btn-success {
   color: #fff;
   background: #74C080;
 }
+form textarea.btn-success.btn-default,
 form input[type=submit].btn-success.btn-default,
 form input[type=search].btn-success.btn-default {
   color: #74C080;
   background: none;
   box-shadow: inset 0 0 0 1px #74C080;
+}
+form textarea {
+  border: 1px solid #E7E7EC;
+  cursor: auto;
 }
 .alert {
   font-size: 15px;
@@ -984,7 +1013,7 @@ form input[type=search].btn-success.btn-default {
   text-transform: uppercase;
   opacity: .25;
   -webkit-transition: 300ms ease;
-          transition: 300ms ease;
+  transition: 300ms ease;
 }
 #footer--copyright .wag a {
   color: inherit;
