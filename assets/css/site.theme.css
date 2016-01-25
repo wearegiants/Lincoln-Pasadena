@@ -1021,6 +1021,32 @@ form textarea {
 #footer--copyright .wag:hover {
   opacity: 1;
 }
+#footer--signup {
+  font-family: 'proxima-nova', sans-serif;
+}
+#footer--signup label {
+  display: none;
+}
+#footer--signup input {
+  padding: 0 5px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  height: 30px;
+  text-align: center!important;
+  line-height: 30px;
+  border-radius: 3px;
+}
+#footer--signup input.email {
+  color: rgba(35, 31, 32, 0.7);
+}
+#footer--signup input.button {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+#footer--signup input.button:hover {
+  background: transparent;
+}
 .gallery.carousel {
   clear: both;
   position: relative;

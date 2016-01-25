@@ -23,6 +23,12 @@
                <div class="fs-cell fs-lg-5 fs-md-full fs-sm-3 fs-centered"><?php the_field('address', 14); ?></div>
             </div>
          </div>
+         <div id="footer--signup" class="text-center">
+            <hr class="divider">
+            <div class="fs-cell fs-all-half fs-sm-full fs-centered">
+               <?php echo do_shortcode('[epm_mailchimp]'); ?>
+            </div>
+         </div>
          <div id="footer--copyright" class="text-center">
             <hr class="divider">
             <?php 

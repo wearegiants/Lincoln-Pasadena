@@ -48,4 +48,31 @@
 		}
 	}
 
+	&--signup {
+		.headerFont();
+		label {
+			display: none;
+		}
+		input {
+			padding:	0 5px;
+			.font_size(15);
+			height: 30px;
+			text-align: center!important;
+			line-height: 30px;
+			border-radius: 3px;
+			
+			&.email {
+				color: fade(@black, 70%)	
+			}
+			&.button {
+				border: none;
+				box-shadow: none;
+				margin-bottom: 0;
+				&:hover {
+					background: transparent;
+				}
+			}
+		}
+	}
+
 }
