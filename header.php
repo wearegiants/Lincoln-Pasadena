@@ -9,6 +9,7 @@
 <meta name="description" content="<?php bloginfo( 'description' ) ?>">
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="1pTgdJHE54qTtQUIbpwChgmDWvAIBKnrXwccvBeTKOE" />
 
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
